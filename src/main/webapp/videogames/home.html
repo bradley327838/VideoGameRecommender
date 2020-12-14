@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Steam Video Games</title>
+  <script>
+    function getUser() {
+      document.getElementById("current user").innerHTML = "Logged in as "
+          + localStorage.getItem("Type") + ": " + localStorage.getItem("Name");
+    }
+  </script>
+</head>
+<body onload="getUser()">
+<div>
+  <h1>Welcome to Steam!</h1>
+  <ul>
+    <li>
+      <a href="videogamelist.html">
+        Video Games
+      </a>
+    </li>
+    <li>
+      <a href="../gamedevelopers/gamedeveloper-list.html">
+        Game Developers
+      </a>
+    </li>
+    <li>
+      <a href="../users/user-list.html">
+        Users
+      </a>
+    </li>
+    <li>
+      <a href="ownership-list.html">
+        View my Games Library
+      </a>
+    </li>
+  </ul>
+  <p>  </p>
+  <a href="../index.html">
+    Back
+  </a>
+</div>
+<div>
+  <br />
+  <br />
+  <h4 id = "current user"></h4>
+  <a href="../index.html">Logout</a>
+</div>
+
+</body>
+</html>
