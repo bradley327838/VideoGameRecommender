@@ -45,6 +45,7 @@ class UserEditor extends React.Component {
       <div className="container">
         <h1>User Editor {this.state.user.username}</h1>
         <input className="form-control" readOnly={true} value={this.state.user.userid}/>
+        <h3>Username</h3>
         <input
           onChange={(event) => this.setState({
             user: {
@@ -57,7 +58,7 @@ class UserEditor extends React.Component {
           <button onClick={this.saveUser}>
             Save
           </button>
-        <input className="form-control" readOnly={true} value={this.state.user.userid}/>
+        <h3>Password</h3>
         <input
             onChange={(event) => this.setState({
               user: {
@@ -70,7 +71,7 @@ class UserEditor extends React.Component {
         <button onClick={this.saveUserPassword}>
           Save
         </button>
-        <input className="form-control" readOnly={true} value={this.state.user.userid}/>
+        <h3>Phone Number</h3>
         <input
             onChange={(event) => this.setState({
               user: {
@@ -83,6 +84,7 @@ class UserEditor extends React.Component {
         <button onClick={this.saveUserPhone}>
           Save
         </button>
+        <h3>Email</h3>
         <input
             onChange={(event) => this.setState({
               user: {
@@ -95,6 +97,7 @@ class UserEditor extends React.Component {
         <button onClick={this.saveUserEmail}>
           Save
         </button>
+        <h3>Account Balance</h3>
         <input
             onChange={(event) => this.setState({
               user: {
